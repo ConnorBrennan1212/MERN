@@ -20,3 +20,19 @@ const connor = new Ninja("connor", 100)
 connor.sayName()
 connor.drinkSake()
 connor.showStats()
+
+class Sensei extends Ninja{
+    constructor(name, wisdom = 10){
+        super(name, 100, 10, 10);
+        this.wisdom = wisdom
+    }
+    speakWisdom(){
+        this.drinkSake();
+        console.log("wisdom")
+    }
+}
+
+const sensei1 = new Sensei("Connor", 50);
+sensei1.sayName();
+sensei1.speakWisdom();
+sensei1.showStats();
