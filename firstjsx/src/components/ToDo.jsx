@@ -19,3 +19,4 @@ class ToDoList extends Component{
         )
     }
 }
+export default App;
