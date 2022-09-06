@@ -16,19 +16,22 @@ class Ninja{
         console.log("Tasty")
     }
 }
-const connor = new Ninja("connor", 100)
-connor.sayName()
-connor.drinkSake()
-connor.showStats()
+// const connor = new Ninja("connor", 100)
+// connor.sayName()
+// connor.drinkSake()
+// connor.showStats()
 
 class Sensei extends Ninja{
-    constructor(name, wisdom = 10){
-        super(name, 100, 10, 10);
+    constructor(name, health =100, speed = 10, strength = 10, wisdom = 10){
+        super(name, health, speed, strength);
         this.wisdom = wisdom
     }
     speakWisdom(){
         this.drinkSake();
         console.log("wisdom")
+    }
+    drinkSake(){
+        
     }
 }
 
