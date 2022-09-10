@@ -13,6 +13,7 @@ function App() {
       <h1>Star Wars</h1>
       <Form></Form>
       <Routes>
+        <Route path='/' element={<h1>C3PO says hello</h1>}/>
         <Route path='/people/:id' element={<PeopleComponent />}/>
         <Route path='/planets/:id' element={<PlanetComponent />}/>
       </Routes>
